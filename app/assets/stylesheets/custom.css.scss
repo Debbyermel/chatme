@@ -3,3 +3,138 @@
 .chatbox {
   height: 450px;
 }
+
+.login-wrapper {
+  background: #50a3a2;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.login-container {
+  height: 400px;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-put;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+input {
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 auto 10px auto;
+  outline: 0;
+  padding: 10px 15px;
+  text-align: center;
+  transition-duration: 0.25s;
+  width: 250px;
+}
+
+input:hover {
+  background: #f1f1f1;
+  opacity: 0.6;
+}
+
+input:focus {
+  background: white;
+  color: #53e3a6;
+  width: 300px;
+}
+
+.login-icon:hover  {
+  background: white;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+
+
+.animated-squared {
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+li {
+  animation: square 25s infinite;
+  background: #d7cbd1;
+  bottom: -160px;
+  display: block;
+  height: 40px;
+  list-style: none;
+  position: absolute;
+  transition-timing-function: linear;
+  width: 40px;
+}
+
+li:nth-child(1) {
+  left: 10%;
+}
+
+li:nth-child(2) {
+  animation-delay: 2s;
+  animation-duration: 17s;
+  height: 80px;
+  left: 20%;
+  width: 80px;
+}
+
+li:nth-child(3) {
+  animation-delay: 4s;
+  left: 25%;
+}
+
+li:nth-child(4) {
+  animation-duration: 22s;
+  background: #d7cbd1;
+  height: 60px;
+  left: 40%;
+  width: 60px;
+}
+
+li:nth-child(5) {
+  left: 70%;
+}
+
+li:nth-child(6) {
+  animation-delay: 3s;
+  background: #d7cbd1;
+  height: 120px;
+  left: 80%;
+  width: 120px;
+}
+
+li:nth-child(7) {
+  animation-delay: 7s;
+  height: 160px;
+  left: 32%;
+  width: 160px;
+}
+
+@keyframes square {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-700px) rotate(600deg); }
+}
