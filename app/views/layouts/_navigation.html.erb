@@ -1,17 +1,12 @@
-<%= link_to "Chatroom", root_path, class: "item" %>
-<a class="item">
-  Messages
-</a>
-<div class="right menu">
-  <div class="ui dropdown item">
-    Account <i class="dropdown icon"></i>
-    <div class="menu">
-      <a class="item">Log out</a>
-      <%= link_to "Log in", login_path, class: "item" %>
-      <a class="item">Sign up</a>
-    </div>
+<header>
+  <div class="logo-container">
+    <%= link_to "ChatMe", root_path, class: 'nav-link', id: 'logo' %>
   </div>
-  <div class="item">
-      <div class="ui primary button">Sign Up</div>
-  </div>
-</div>
+  <nav>
+    <ul class="nav-links">
+      <li><%= link_to "Log in", login_path, class: "nav-link" %></li>
+      <li><%= link_to "Messages", message_path, class: "nav-link" %></li>
+      <li><%= link_to "Contact", contact_path, class: "nav-link" %></li>
+    </ul>
+  </nav>
+</header>

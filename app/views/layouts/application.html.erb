@@ -10,11 +10,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <div class="ui small inverted menu">
-      <div class="ui container">
-        <%= render 'layouts/navigation' %>
-      </div>
-    </div>
+    <%= render 'layouts/navigation' %>
     <div class="ui container">
       <%= yield %>
     </div>
