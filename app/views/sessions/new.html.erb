@@ -1,16 +1,14 @@
 <div class="login-wrapper">
   <div class="login-container">
     <h1> Chat Me </h1>
-    <form class="form">
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
+    <%= form_for(:session, html: {class: "form", role: "form"}, url: login_path) do |f| %>
+      <%= f.text_field :username, placeholder: "Username", class: 'input' %>
+      <%= f.password_field :password, placeholder: "Password", class: 'input' %>
       <h4 class="ui center aligned medium icon header">
-        <i class="circular orange power off tiny icon login-icon"></i>
-        Log in to continue
+        <%= f.button "Login", class: "ui orange submit button circular"%>
       </h4>
-    </form>
+    <% end %>
   </div>
-
 
   <ul class="animated-squared">
     <li></li>

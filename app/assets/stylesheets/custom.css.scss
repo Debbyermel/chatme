@@ -34,7 +34,7 @@ form {
   z-index: 2;
 }
 
-input {
+.input {
   background: #f1f1f1;
   border-radius: 5px;
   border: 1px solid #f1f1f1;
@@ -50,12 +50,12 @@ input {
   width: 250px;
 }
 
-input:hover {
+.input:hover {
   background: #f1f1f1;
   opacity: 0.6;
 }
 
-input:focus {
+.input:focus {
   background: white;
   color: #53e3a6;
   width: 300px;
