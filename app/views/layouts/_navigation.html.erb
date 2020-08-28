@@ -4,16 +4,13 @@
   </div>
   <nav>
     <ul class="nav-links">
+      <li><%= link_to "Messages", message_path, class: "nav-link" %></li>
+      <li><%= link_to "Contact", contact_path, class: "nav-link" %></li>
       <% if logged_in? %>
         <li><%= link_to "Logout", logout_path, method: :delete, class: "nav-link" %></li>
       <% else %>
         <li><%= link_to "Log in", login_path, class: "nav-link" %></li>
       <% end %>
-      <li><%= link_to "Messages", message_path, class: "nav-link" %></li>
-      <li><%= link_to "Contact", contact_path, class: "nav-link" %></li>
-      <% if !logged_in? %>
-        <li><%= link_to "Sign in", login_path, class: "nav-link" %></li>
-      <%end%>
     </ul>
   </nav>
 </header>

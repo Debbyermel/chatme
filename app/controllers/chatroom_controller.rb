@@ -1,8 +1,8 @@
 class ChatroomController < ApplicationController
-  before_action :required_user
+  before_action :require_user
 
   def index
-    @messages = Message.new
+    @message = Message.new
     @messages = Message.all
   end
 
