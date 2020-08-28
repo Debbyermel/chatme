@@ -1,19 +1,16 @@
 <div class="login-wrapper #chatbox-section">
   <div class="login-container">
-    <h1> Chat Me </h1>
+    <h1> Start Chat </h1>
     <%= form_for(:session, html: {class: "form", role: "form"}, url: login_path) do |f| %>
       <%= f.text_field :username, placeholder: "Username", class: 'input' %>
       <%= f.password_field :password, placeholder: "Password", class: 'input' %>
       <h4 class="ui center aligned medium icon header">
-        <%= f.button "Login", class: "ui orange submit button circular"%>
+        <%= f.button "Login", class: "cta-login"%>
       </h4>
     <% end %>
   </div>
 
   <ul class="animated-squared">
-    <li></li>
-    <li></li>
-    <li></li>
     <li></li>
     <li></li>
     <li></li>
