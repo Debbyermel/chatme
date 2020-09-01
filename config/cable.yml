@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: redis://redistogo:703e721a6754277b4a98428de661e415@scat.redistogo.com:9933/
   channel_prefix: chatme-app_production
