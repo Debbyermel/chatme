@@ -11,7 +11,7 @@ class RegistrationsController < ApplicationController
       flash[:success] = "Welcome #{@user.username}, you have signup in successfully."
       redirect_to message_path
     else
-      redirect_to signup_path, flash[:notice] =  user.errors.messages
+      redirect_to signup_path, flash[:notice] =  @user.errors.messages
     end
   end
 
