@@ -13,7 +13,7 @@ header {
   display: flex;
   height: 10vh;
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .logo-container,
@@ -22,16 +22,13 @@ header {
 }
 
 .logo-container {
-  flex: 1;
+  padding-left: 40px;
 }
 
-.logo img {
-  background-image: asset-url('logo.svg');
-}
-
-.logo {
-  font-weight: 400;
-  margin: 5px;
+.logo-container img {
+  height: 60px;
+  margin-top: 10px;
+  width: 60px;
 }
 
 nav {
@@ -46,6 +43,7 @@ nav {
 .nav-link {
   color: #5f5f79;
   font-size: 18px;
+  outline: none;
   text-decoration: none;
 }
 
@@ -100,6 +98,10 @@ nav {
   background: transparent;
   border: 2px solid #c36cbb;
   color: #c36cbb;
+}
+
+.btn-cta:focus {
+  outline: none;
 }
 
 .cta-add {
@@ -185,6 +187,10 @@ nav {
 
   .cover img {
     height: 80%;
+  }
+
+  .dot {
+    display: none;
   }
 
   .small-circle,
