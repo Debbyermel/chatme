@@ -45,6 +45,10 @@ nav {
   font-size: 18px;
   outline: none;
   text-decoration: none;
+  &:hover {
+    color: #c36cbb;
+    font-weight: 700;
+  }
 }
 
 .presentation {
@@ -199,3 +203,19 @@ nav {
     opacity: 0.2;
   }
 }
+
+// Contact Page
+
+.contact-container {
+  text-align: center;
+}
+
+@keyframes uploading {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
